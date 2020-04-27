@@ -31,6 +31,7 @@ event-script {
 }
 
 Load the following config on box:
+set system scripts language python
 set event-options policy LIVENESS events evpn_core_isolated
 set event-options policy LIVENESS then event-script liveness.py arguments host 10.192.34.235
 set event-options policy LIVENESS then event-script liveness.py arguments count 5
